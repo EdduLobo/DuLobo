@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DuLobo</title>
+    <!-- Importação das fontes "google fonts JetBrains" -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,25 +22,26 @@
 
     <!-- Importação dos css únicos -->
 
-    <link rel="stylesheet" href="./css/Style.css" />
-    <link rel="stylesheet" href="./css/Header.css" />
-    <link rel="stylesheet" href="./css/Sections.css" />
-    <link rel="stylesheet" href="./css/Footer.css" />
+    <link rel="stylesheet" href="./src/css/Style.css" />
+    <link rel="stylesheet" href="./src/css/Header.css" />
+    <link rel="stylesheet" href="./src/css/Sections.css" />
+    <link rel="stylesheet" href="./src/css/Footer.css" />
+    <link rel="stylesheet" href="./src/css/Media.css" />
   </head>
 
   <body>
     <!-- header design -->
 
     <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#" class="logo">&lt;DuLobo /&gt;</a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
+        <a href="#about">Sobre</a>
         <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#portfolio">Portfólio</a>
         <a href="#contact">Contato</a>
       </nav>
     </header>
@@ -48,15 +50,10 @@
 
     <section class="home" id="home">
       <div class="home-content">
-        <h3>Hi! it's Me</h3>
-        <h1>Du DuLobo</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-          quos expedita commodi. Quidem aspernatur, eos nam voluptatum ut
-          perferendis doloremque? Iure nam commodi reiciendis assumenda, magnam
-          nisi. Amet, consequatur accusantium!
-        </p>
+        <h3>Olá! Eu sou</h3>
+        <h1>Eduardo Lobo.</h1>
+        <h3><span class="multiple-text"></span></h3>
+
         <div class="media">
           <a href="#"><i class="bx bxl-facebook"></i></a>
           <a href="#"><i class="bx bxl-twitter"></i></a>
@@ -80,14 +77,15 @@
 
       <div class="about-content">
         <h2 class="heading">Sobre <span>Mim</span></h2>
-        <h3>Frontend Developer!</h3>
+        <h3>Em busca de experiência!</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem
-          sequi temporibus earum consectetur quas suscipit, veniam molestias nam
-          minima cumque quae cupiditate quos quasi natus ullam beatae ipsum
-          tenetur accusamus amet? Earum rerum accusantium, hic accusamus omnis
-          quasi eveniet minus quis odit repudiandae, ex tempore nesciunt soluta
-          cupiditate exercitationem!
+          Meu nome é Eduardo Lobo, tenho 22 anos, sou fascinado pela criação de
+          estilos visuais e estou focado nas tecnologias FrontEnd. Tenho
+          conhecimentos sobre Html, Css e Javascript. Atualmente estou cursando
+          análise e desenvolvimento de sistemas (ADS) e estudando sobre a
+          biblioteca javascript React. Também possuo habilidades em outras áreas
+          como a Audiovisual tendo conhecimentos sobre softwares como Photoshop,
+          Premiere e After Effects.
         </p>
         <a href="#" class="btn">Read More</a>
       </div>
@@ -96,7 +94,7 @@
     <!-- skills section -->
 
     <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
+      <h2 class="heading">Minhas <span>Skills</span></h2>
 
       <div class="skills-container">
         <div class="skills-box">
@@ -107,7 +105,6 @@
             enim quasi eligendi! Labore ullam hic corporis sunt. Rerum voluptate
             magni soluta ducimus aliquid culpa!
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
 
         <div class="skills-box">
@@ -118,7 +115,6 @@
             enim quasi eligendi! Labore ullam hic corporis sunt. Rerum voluptate
             magni soluta ducimus aliquid culpa!
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
 
         <div class="skills-box">
@@ -129,7 +125,6 @@
             enim quasi eligendi! Labore ullam hic corporis sunt. Rerum voluptate
             magni soluta ducimus aliquid culpa!
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
       </div>
     </section>
@@ -248,6 +243,14 @@
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <!--custom javascript-->
+    <script src="./src/js/projetos.js"></script>
   </body>
-  <script src="./js/projetos.js"></script>
 </html>
