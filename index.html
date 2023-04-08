@@ -55,13 +55,20 @@
         <h3><span class="multiple-text"></span></h3>
 
         <div class="media">
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/eduardo.lobo.7923030/"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://twitter.com/DuLobo0"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/carlos-eduardo-favilla-lobo-b458b5237/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
           <a href="#"><i class="bx bxl-github"></i></a>
         </div>
 
-        <a href="#" class="btn">Dowload CV</a>
+        <a href="https://github.com/EdduLobo" class="btn">Dowload CV</a>
       </div>
       <div class="home-img">
         <img src="../imgs/perf.webp" alt="" />
@@ -113,7 +120,7 @@
           <p>
             Tenho conhecimentos sobre Html, Css e Javascript. <br />
             Atualmente estudo sobre a tecnologia ReactJS e pretendo futuramente
-            aprender sobre Typescrip e Sass. <br />Além disso, possuo
+            aprender sobre Typescript e Sass. <br />Além disso, possuo
             conhecimentos básicos em SQL e NodeJS.
           </p>
         </div>
@@ -216,22 +223,44 @@
     <section class="contact" id="contact">
       <h2 class="heading">Entre em <span>Contato!</span></h2>
 
-      <form action="#">
+      <!-- api staticforms, usada para o recebimento dos emails  -->
+
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <input
+          type="hidden"
+          name="accessKey"
+          value="b8a26a7d-7ede-4021-9644-88ef6fc7793f"
+        />
+        <!-- Access Key que garante a identificação do meu email -->
         <div class="input-box">
-          <input type="text" placeholder="Nome Completo" />
-          <input type="email" placeholder="Endereço de Email" />
+          <input type="text" name="name" placeholder="Nome Completo" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Endereço de Email"
+            required
+          />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Telefone" />
-          <input type="text" placeholder="Assunto do Email" />
+          <input
+            type="number"
+            name="number"
+            placeholder="Telefone (Opcional)"
+          />
+          <input type="text" placeholder="Assunto do Email" required />
         </div>
         <textarea
-          name=""
+          name="message"
           id=""
           cols="30"
           rows="10"
           placeholder="Deixe Sua Mensagem"
         ></textarea>
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="http://127.0.0.1:5500/index.html#home"
+        />
         <input type="submit" value="Enviar" class="btn" />
       </form>
     </section>
@@ -240,7 +269,7 @@
 
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2023 by DuLobo | All Rights Reserved.</p>
+        <p>&copy; 2023 | Eduardo Lobo | Todos os direitos reservados.</p>
       </div>
       <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
