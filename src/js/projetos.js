@@ -43,7 +43,7 @@ window.onscroll = () => {
 
 /* scroll reveal */
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: "80px",
   duration: 2000,
   delay: 200,
