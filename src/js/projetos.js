@@ -61,7 +61,7 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 /* typed js */
 
 const typed = new Typed(".multiple-text", {
-  strings: ["Tecnólogo em Análise e Desenvolvimento de Sistemas", "Editor de Vídeos"],
+  strings: ["Tecnólogo em ADS", "Editor de Vídeos"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
